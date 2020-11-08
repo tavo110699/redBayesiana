@@ -1,0 +1,31 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 08/11/2020, 13:03:00
+    Author     : gustavo
+*/
+
+.boton{
+    -fx-text-fill: white;
+    -fx-background-color: #ff0000;
+    -fx-pref-width: 20px;
+    -fx-pref-height: 20px;
+    -fx-min-height: -fx-pref-height;
+    -fx-max-height: -fx-pref-height;
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+}
+.botonB{
+    -fx-text-fill: white;
+    -fx-background-color: #00bb2d;
+    -fx-pref-width: 20px;
+    -fx-pref-height: 20px;
+    -fx-min-height: -fx-pref-height;
+    -fx-max-height: -fx-pref-height;
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+}
+
