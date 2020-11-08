@@ -62,7 +62,7 @@ public class redAlarma {
         belief1 = BayesNetHelper.getBelief(ig, Mariallama);
 
     }
-
+//resultados aun erroneos
     public void setMariaSi() {
         Mariallama.set_observation_value("siAlarmaMaria");
         belief = BayesNetHelper.getBelief(ig, Juanllama);
