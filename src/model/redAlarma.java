@@ -35,17 +35,7 @@ public class redAlarma {
         Alarma = BayesNetHelper.createNode(ig, "alarma", "siAlarma", "noAlarma");
         Juanllama = BayesNetHelper.createNode(ig, "juanllama", "siAlarmaJuan", "noAlarmajuan");
         Mariallama = BayesNetHelper.createNode(ig, "mariallama", "siAlarmaMaria", "noAlarmaMaria");
-        /*
-                ig.create_arc(Robo, Alarma);
-        ig.create_arc(Terremoto, Alarma);
-        ig.create_arc(Alarma, Juanllama);
-        ig.create_arc(Alarma, Mariallama);
-        
-                ig.create_arc(Mariallama, Alarma);
-        ig.create_arc(Juanllama, Alarma);
-        ig.create_arc(Alarma, Terremoto);
-        ig.create_arc(Alarma, Robo);
-         */
+
         //crear relaciones entre los nodos
         ig.create_arc(Robo, Alarma);
         ig.create_arc(Terremoto, Alarma);
@@ -74,25 +64,25 @@ public class redAlarma {
     }
 
     public void setMariaSi() {
-        Terremoto.set_observation_value("si");
+        Mariallama.set_observation_value("siAlarmaMaria");
         belief = BayesNetHelper.getBelief(ig, Juanllama);
         belief1 = BayesNetHelper.getBelief(ig, Mariallama);
     }
 
     public void setMariaNo() {
-        Terremoto.set_observation_value("no");
+        Mariallama.set_observation_value("noAlarmaMaria");
         belief = BayesNetHelper.getBelief(ig, Juanllama);
         belief1 = BayesNetHelper.getBelief(ig, Mariallama);
     }
 
     public void setJuanSi() {
-        Robo.set_observation_value("si");
+        Juanllama.set_observation_value("siAlarmaJuan");
         belief = BayesNetHelper.getBelief(ig, Juanllama);
         belief1 = BayesNetHelper.getBelief(ig, Mariallama);
     }
 
     public void setJuanNo() {
-        Robo.set_observation_value("no");
+        Juanllama.set_observation_value("noAlarmaJuan");
         belief = BayesNetHelper.getBelief(ig, Juanllama);
         belief1 = BayesNetHelper.getBelief(ig, Mariallama);
     }
