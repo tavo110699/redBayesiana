@@ -9,7 +9,7 @@
     <resources>
         <j2se version="9.0.4+" href="http://java.sun.com/products/autodl/j2se"/>
         <jar href="lib/javabayes.jar" size="538455" download="eager"/>
-        <jar href="redBayesiana.jar" size="13863" download="eager"/>
+        <jar href="redBayesiana.jar" size="13907" download="eager"/>
     </resources>
     <jfx:javafx-desc width="800" height="600" main-class="main.Launcher" name="Launcher"/>
 </jnlp>

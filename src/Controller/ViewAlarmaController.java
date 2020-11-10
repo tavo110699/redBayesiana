@@ -58,20 +58,26 @@ public class ViewAlarmaController implements Initializable {
     private void btnCalcularAction(ActionEvent event) {
         ra = new redAlarma();
         ra.alarma();
+        ra.declarateVaiables();
 // Ceder opcion a belief
         if (rbSiJuan.isSelected() == true) {
             ra.setJuanSi();
-        } else {
+        }
+
+        if (rbNoJuan.isSelected() == true) {
             ra.setJuanNo();
         }
+
+        // opciones Maria
 // Ceder opcion a belief
         if (rbSiMaria.isSelected() == true) {
             ra.setMariaSi();
-        } else {
+        }
+        if (rbNoMaria.isSelected() == true) {
             ra.setMariaNo();
         }
-        ra.alert();
 
+           ra.alert();
     }
 
     @FXML
