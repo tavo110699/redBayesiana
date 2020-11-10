@@ -53,6 +53,7 @@ public class ViewAlarmaController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }
+    
 
     @FXML
     private void btnCalcularAction(ActionEvent event) {

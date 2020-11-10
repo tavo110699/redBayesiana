@@ -98,6 +98,7 @@ public class redAlarma {
         Juanllama.set_observation_value("alarma");
         Mariallama.set_observation_value("alarma");
          */
+        
         System.out.println("nivel 1:");
         belief = BayesNetHelper.getBelief(ig, Terremoto);
         System.out.println("la probabilidad de que suceda terremoto:" + belief);
