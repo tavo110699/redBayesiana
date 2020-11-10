@@ -30,6 +30,7 @@ and open the template in the editor.
     -fx-background-radius: 20px;
     -fx-border-radius: 20px;
 }
+
 /*Boton con bordes redondos*/
 .buttonC {
     -fx-font-size: 12pt;
@@ -53,6 +54,7 @@ and open the template in the editor.
     -fx-border-radius: 15px;
     -fx-padding: 4px;
 }
+
 .radio-button .radio:selected {
     -fx-background-color: white;
     -fx-background-image: null;
