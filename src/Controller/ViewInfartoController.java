@@ -70,33 +70,38 @@ public class ViewInfartoController implements Initializable {
     private void btnCalcularInfartoAction(ActionEvent event) {
         ri = new redInfarto();
         ri.infarto();
-
         if (rbSiDeporte.isSelected() == true) {
             ri.setDeporteSi();
-        } else {
+        }
+        if (rbNoDeporte.isSelected() == true) {
             ri.setDeporteNo();
         }
 
         if (rbEquilibradaAlimentacion.isSelected() == true) {
             ri.setAlimentacionEquilibrada();
-        } else {
-            ri.setAlimentacionNoEquilibrada();
         }
-
-        if (rbSiFuma.isSelected() == true) {
-            ri.setFumadorSi();
-        } else {
-            ri.setFumadorNo();
+        if (rbNoEquilibradaAlimentacion.isSelected() == true) {
+            ri.setAlimentacionNoEquilibrada();
         }
 
         if (rbAltaPresion.isSelected() == true) {
             ri.setPresionAlta();
-        } else {
+        }
+        if (rbBajaPresion.isSelected() == true) {
             ri.setPresionNormal();
         }
 
+        if (rbSiFuma.isSelected() == true) {
+            ri.setFumadorSi();
+        }
+        if (rbNoFuma.isSelected() == true) {
+            ri.setFumadorNo();
+        }
+
         ri.alert();
+
     }
+
     @FXML
     private void closeAction(ActionEvent event) {
         System.exit(0);
